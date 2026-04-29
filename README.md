@@ -1,4 +1,4 @@
-# Awesome Device Testing Tools
+# Awesome Device Testing Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 > A curated list of free, browser-based tools for testing keyboards, mice, monitors, webcams, microphones, and audio hardware. No installs, no logins.
 
@@ -84,6 +84,3 @@ Open a PR adding any free, browser-based, no-login hardware testing tool. Format
 - [Tool Name](https://example.com/tool) - One-sentence description focused on what the tool measures or detects.
 ```
 
-## License
-
-[CC0-1.0](LICENSE) - public domain. Use, share, and modify freely.
