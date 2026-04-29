@@ -1,76 +1,89 @@
-# Awesome Device Testing Tools [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome Device Testing Tools
 
-Tools and resources for testing keyboards, mice, displays, cameras, microphones, speakers, gamepads, and browser-device behavior.
+> A curated list of free, browser-based tools for testing keyboards, mice, monitors, webcams, microphones, and audio hardware. No installs, no logins.
+
+Maintained by [nasirazizawan009](https://github.com/nasirazizawan009).
+
+---
 
 ## Contents
 
-- [Multi-Device Testing Suites](#multi-device-testing-suites)
-- [Keyboard Diagnostics, Firmware, and Layouts](#keyboard-diagnostics-firmware-and-layouts)
-- [Mouse and Pointer Diagnostics](#mouse-and-pointer-diagnostics)
-- [Gamepad Testing](#gamepad-testing)
-- [Display and Monitor Testing](#display-and-monitor-testing)
-- [Webcam and Camera Testing](#webcam-and-camera-testing)
-- [Microphone and Audio Testing](#microphone-and-audio-testing)
-- [Browser Device APIs and Standards](#browser-device-apis-and-standards)
+- [Keyboard](#keyboard)
+- [Mouse](#mouse)
+- [Monitor / Display](#monitor--display)
+- [Webcam](#webcam)
+- [Microphone](#microphone)
+- [Audio / Speakers / Headphones](#audio--speakers--headphones)
+- [Calculators](#calculators)
 
-## Multi-Device Testing Suites
+---
 
-- [KeyboardTester.click](https://keyboardtester.click/) - Browser-based suite for testing keyboards, mice, displays, cameras, microphones, speakers, gamepads, QR codes, OCR, and related device behavior.
-- [Hardware Tester](https://hardwaretester.com/) - Browser tools for checking keyboards, mice, gamepads, microphones, cameras, and other hardware inputs.
+## Keyboard
 
-## Keyboard Diagnostics, Firmware, and Layouts
+- [KeyboardTester.click](https://keyboardtester.click) - Free, open-source diagnostic suite. Per-key tester, NKRO/ghosting check, USB polling rate (Hz) estimator, switch chatter detector, switch sound classifier, key repeat rate.
+- [Keyboard Ghosting Test](https://keyboardtester.click/keyboard-ghosting-test.php) - Detect which key combinations your keyboard cannot register.
+- [N-Key Rollover Test](https://keyboardtester.click/n-key-rollover-test.php) - Find your keyboard actual NKRO limit.
+- [Stuck Key Test](https://keyboardtester.click/stuck-key-test.php) - Check for stuck or unresponsive keys.
+- [Typing Test](https://keyboardtester.click/keyboard_typing_test.php) - Words-per-minute and accuracy measurement.
 
-- [QMK Documentation](https://docs.qmk.fm/) - Documentation for open source keyboard firmware, keymaps, flashing, and custom keyboard behavior.
-- [QMK Configurator](https://config.qmk.fm/) - Web configurator for QMK keyboard firmware and custom keyboard layouts.
-- [VIA](https://usevia.app/) - Browser interface for configuring compatible mechanical keyboards with VIA firmware support.
-- [Vial](https://get.vial.today/) - Open source keyboard configuration tool built around real-time keymap editing.
-- [Keyboard Layout Editor](http://www.keyboard-layout-editor.com/) - Visual editor for designing and sharing custom keyboard layouts.
+## Mouse
 
-## Mouse and Pointer Diagnostics
+- [Mouse Tester](https://keyboardtester.click/mouse-test.php) - Left/right/middle click and scroll-wheel verification.
+- [Click Speed Test](https://keyboardtester.click/mouse_speed_tester.php) - CPS (clicks per second) measurement.
+- [DPI Tester](https://keyboardtester.click/mouse_sensitivity_DPI_tester.php) - Calibrate and verify mouse DPI.
+- [Ghost Click Detector](https://keyboardtester.click/ghost-click-detector.php) - Detect double-clicking from a single press.
+- [Scroll Wheel Test](https://keyboardtester.click/scroll-wheel-test.php) - Test scroll wheel accuracy and direction.
+- [Double Click Test](https://keyboardtester.click/double-click-test.php) - Verify double-click registration.
+- [Latency Checker](https://keyboardtester.click/latency-checker.php) - Measure input lag.
 
-- [MouseTester](https://github.com/microe1/MouseTester) - Windows utility for visualizing mouse polling behavior, movement data, and sensor consistency.
-- [CPS Check](https://cps-check.com/) - Click speed test for measuring clicks per second and related mouse performance.
-- [Mouse Rate Checker](https://devicetests.com/mouse-rate-test) - Browser tool for estimating mouse polling rate from pointer movement events.
+## Monitor / Display
 
-## Gamepad Testing
+- [Screen Test](https://keyboardtester.click/screentestindex.php) - Solid color, gradient, and pattern test screens.
+- [Dead Pixel Test](https://keyboardtester.click/dead-pixel-test.php) - Find dead or dark sub-pixels.
+- [Stuck Pixel Test](https://keyboardtester.click/stuck-pixel-test.php) - Find always-on (stuck) pixels.
+- [Black Screen Test](https://keyboardtester.click/black-screen-test.php) - Reveal backlight bleed and uniformity issues.
+- [White Screen Test](https://keyboardtester.click/white-screen-test.php) - Detect dust, smudges, and stuck pixels.
+- [Monitor Sharpness Test](https://keyboardtester.click/monitor-sharpness-test.php) - Lagom-style 1-pixel grid plus RGB sub-pixel ruler.
 
-- [Gamepad Tester](https://gamepad-tester.com/) - Web tool for testing connected gamepads through the browser Gamepad API.
+## Webcam
 
-## Display and Monitor Testing
+- [Webcam Test](https://keyboardtester.click/webcamtesterindex.php) - Verify camera function in browser.
+- [Camera Resolution Test](https://keyboardtester.click/camera-resolution-test.php) - Detect actual capture resolution.
+- [Webcam Mirror](https://keyboardtester.click/webcam-mirror.php) - Virtual mirror with snapshot.
+- [Take Picture With Webcam](https://keyboardtester.click/take-picture-with-webcam.php) - Quick webcam still capture.
 
-- [Blur Busters UFO Motion Tests](https://www.testufo.com/) - Motion, refresh rate, frame skipping, and display performance tests.
-- [EIZO Monitor Test](https://www.eizo.be/monitor-test/) - Monitor test patterns for checking pixels, gradients, sharpness, and uniformity.
-- [Lagom LCD Monitor Test Pages](https://www.lagom.nl/lcd-test/) - LCD test patterns for contrast, gamma, black level, response time, and viewing angle.
-- [DeadPixelTest.org](https://www.deadpixeltest.org/) - Full-screen color tests for finding dead, stuck, or hot pixels.
-- [DisplayCAL](https://displaycal.net/) - Display calibration and profiling software for color-managed monitor workflows.
+## Microphone
 
-## Webcam and Camera Testing
+- [Mic Tester](https://keyboardtester.click/mic-tester.php) - Live waveform plus peak-level meter.
+- [Test My Mic](https://keyboardtester.click/test-my-mic.php) - Quick microphone check.
+- [Microphone Volume Test](https://keyboardtester.click/microphone-volume-test.php) - Visual volume monitoring.
 
-- [WebcamTests.com](https://www.webcamtests.com/) - Browser webcam test for checking camera availability, stream quality, and basic device information.
-- [WebCamMicTest Webcam Test](https://webcammictest.com/check-webcam.html) - Online webcam test for checking video input and camera permissions.
-- [WebRTC Device Selection Sample](https://webrtc.github.io/samples/src/content/devices/input-output/) - WebRTC sample for selecting audio and video input/output devices in the browser.
+## Audio / Speakers / Headphones
 
-## Microphone and Audio Testing
+- [Headphone & Speaker Tester](https://keyboardtester.click/headphone_speaker_tester_index.php) - Hub for audio output diagnostics.
+- [Frequency Response Test](https://keyboardtester.click/frequency-response-test.php) - 20 Hz to 20 kHz log sweep.
+- [Pitch Detector](https://keyboardtester.click/pitch-detector.php) - Hz, note, and cents readout.
+- [Hearing Age Test](https://keyboardtester.click/hearing-age-test.php) - Mosquito-tone screening (8-22 kHz).
+- [Stereo Test](https://keyboardtester.click/stereo-test.php) - L/R channel verification.
+- [Left/Right Speaker Test](https://keyboardtester.click/left-right-speaker-test.php) - Confirm stereo channel routing.
 
-- [MicTests.com](https://mictests.com/) - Online microphone test for checking microphone access, volume, and device status.
-- [Online Mic Test](https://www.onlinemictest.com/) - Browser microphone test with visual input level feedback.
-- [AudioCheck](https://www.audiocheck.net/) - Audio test tones and checks for headphones, speakers, hearing, phase, and frequency response.
-- [Online Mic Test Sound Test](https://www.onlinemictest.com/sound-test/) - Speaker and sound test for checking audio output in the browser.
+## Calculators
 
-## Browser Device APIs and Standards
+- [eDPI Calculator](https://keyboardtester.click/edpi-calculator.php) - Effective DPI for FPS games.
+- [FOV Calculator](https://keyboardtester.click/fov-calculator.php) - Field of view conversion across games.
+- [RAM Latency Calculator](https://keyboardtester.click/ram-latency-calculator.php) - True latency from CL and frequency.
+- [Online Ruler](https://keyboardtester.click/online-ruler.php) - Credit-card-calibrated SVG ruler.
 
-- [MDN MediaDevices](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices) - Browser API reference for discovering and accessing cameras, microphones, and media devices.
-- [MDN Gamepad API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API) - Browser API reference for reading gamepad and controller input.
-- [MDN KeyboardEvent](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent) - Browser API reference for keyboard events and key input handling.
-- [MDN WebHID API](https://developer.mozilla.org/en-US/docs/Web/API/WebHID_API) - Browser API reference for connecting to human interface devices where supported.
-- [W3C Gamepad Standard](https://www.w3.org/TR/gamepad/) - Web standard for browser access to gamepad and controller input.
-- [Web Audio API](https://webaudio.github.io/web-audio-api/) - Web standard for audio processing, measurement, and playback behavior in browsers.
-- [WebRTC Samples](https://webrtc.github.io/samples/) - Practical browser samples for media devices, audio, video, and WebRTC behavior.
+---
 
 ## Contributing
 
-Contributions are welcome. Please read [contributing.md](contributing.md) before opening a pull request.
+Open a PR adding any free, browser-based, no-login hardware testing tool. Format:
 
-## Footnotes
+```markdown
+- [Tool Name](https://example.com/tool) - One-sentence description focused on what the tool measures or detects.
+```
 
-This list is maintained by KeyboardTester.click. Inclusion is based on usefulness and quality, not reciprocal links, paid placement, or affiliation.
+## License
+
+[CC0-1.0](LICENSE) - public domain. Use, share, and modify freely.
