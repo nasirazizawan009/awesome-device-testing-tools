@@ -1,0 +1,57 @@
+name: Submit a tool
+description: Suggest a device testing tool for the list.
+title: "Add: "
+labels:
+  - submission
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Tool name
+      placeholder: Example Tool
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Tool URL
+      placeholder: https://example.com/
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Multi-Device Testing Suites
+        - Keyboard Testing
+        - Mouse and Pointer Testing
+        - Gamepad Testing
+        - Display and Monitor Testing
+        - Webcam and Camera Testing
+        - Microphone and Audio Testing
+        - Keyboard Firmware and Layout Tools
+        - Browser Device APIs
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Short objective description
+      description: One sentence. Start with an uppercase letter and end with a period.
+      placeholder: Browser tool for testing...
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Quality checks
+      options:
+        - label: The tool works today.
+          required: true
+        - label: The page is not affiliate-only, unsafe, or a forced download.
+          required: true
+        - label: I searched the README and this tool is not already listed.
+          required: true
+        - label: I disclose if I maintain or own this tool.
+          required: false
